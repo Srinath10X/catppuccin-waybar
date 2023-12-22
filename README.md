@@ -6,6 +6,10 @@ Catppuccino-Waybar 🐱 is a streamlined Linux status bar 🖥️, perfect for t
 
 ![waybar](./screenshot/waybar.png)
 
+## Customization
+
+Click here to go to the [colorpalette](./docs/colorpalette.md).
+
 ## Features
 
 - Seamless integration with Catppuccino theme 🎨
