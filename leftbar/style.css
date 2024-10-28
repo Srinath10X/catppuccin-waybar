@@ -1,0 +1,97 @@
+/* --- Mostly for fonts nothing special --- */
+* {
+  font-family: "JetBrainsMono Nerd Font";
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* --- Waybar Styles --- */
+window#waybar {
+  background: #1a1e23;
+  border-radius: 0.5rem;
+  color: #cdd6f4;
+  border: 2px solid rgba(117, 170, 240, 0.6);
+}
+
+/* For Workspaces Module */
+#workspaces {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+/* For workspace button*/
+#workspaces button {
+  /* Changing the padding will effect default padding */
+  /* padding: 5px; */
+  color: #b4befe;
+}
+
+#workspaces button.active {
+  color: #75aaf0;
+}
+
+#workspaces button.focused {
+  color: #a6adc8;
+  background: #eba0ac;
+}
+
+#workspaces button.urgent {
+  color: #11111b;
+  background: #a6e3a1;
+  border-radius: 10px;
+}
+
+#workspaces button:hover {
+  background: transparent;
+  color: transparent;
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+#clock {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#network {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 3px;
+}
+
+#battery {
+  margin-left: 3px;
+  margin-bottom: 10px;
+  color: #a6e3a1;
+}
+
+/* pulseaudio and its expandable section */
+#pulseaudio {
+  color: #89b4fa;
+  margin-left: 3px;
+}
+
+#pulseaudio-slider slider {
+  background: #a1bdce;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+#pulseaudio-slider trough {
+  margin-top: -3px;
+  min-height: 100px;
+  min-width: 10px;
+  margin-bottom: -4px;
+  border-radius: 8px;
+  border: none;
+  background: #343434;
+  border: 1px solid #343434;
+}
+#pulseaudio-slider highlight {
+  min-width: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #89b4fa;
+  border-radius: 1rem;
+}

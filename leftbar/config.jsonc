@@ -1,0 +1,109 @@
+{
+  "layer": "top",
+  "position": "left",
+  "width": -10,
+	"height": "100%",
+  "margin-right": 2,
+  "margin-left": 10,
+	"margin-top": 10,
+	"margin-bottom": 10,
+
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": [],
+  "modules-right": ["network","battery","group/expand-3","clock"],
+
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "persistent_workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": [],
+      "6": [],
+      "7": [],
+      "8": [],
+      "9": []
+    },
+    "format": "{icon}",
+    "format-icons": {
+			"default": " ",
+			"active": " ",
+    }
+  },
+
+
+	"pulseaudio": {
+		"format": "{icon}",
+		"tooltip": false,
+		"format-muted": " Muted",
+		"on-scroll-up": "pamixer -i 5",
+		"on-scroll-down": "pamixer -d 5",
+		"scroll-step": 5,
+		"format-icons": {
+			"headphone": "",
+			"hands-free": "",
+			"headset": "",
+			"phone": "",
+			"portable": "",
+			"car": "",
+			"default": [" ", " ", " "]
+		}
+	},
+
+	"group/expand-3": {
+		"orientation": "vertical",
+		"drawer": {
+			"transition-duration": 600,
+			"transition-to-right": true,
+			"click-to-reveal": true
+		},
+		"modules": ["pulseaudio","pulseaudio/slider"]
+	},
+
+	"pulseaudio/slider": {
+		"min": 0,
+		"max": 150,
+		"orientation": "vertical"
+	},
+
+	"network": {
+		// "interface": "wlp2*", // (Optional) To force the use of this interface
+		"format-wifi": " ",
+		"orientation": "vertical",
+		"format-ethernet": "{ipaddr}/{cidr}",
+		"tooltip-format": "{essid} - {ifname} via {gwaddr}",
+		"format-linked": "{ifname} (No IP)",
+		"format-disconnected": "⚠ ",
+	},
+
+	"battery": {
+		"states": {
+			"good": 95,
+			"warning": 30,
+			"critical": 20
+		},
+		"format": "{icon}",
+		"tooltip-format": "{capacity}%",
+		"format-charging": " ",
+		"format-plugged": " ",
+		"format-icons": [" ", " ", " ", " ", " "]
+	},
+
+	"clock": {
+		"format": "{:%I\n%M}",
+		"tooltip-format": "<tt>{calendar}</tt>",
+		"calendar": {
+			"mode": "month",
+			"mode-mon-col": 3,
+			"on-scroll": 1,
+			"on-click-right": "mode",
+			"format": {
+				"months": "<span color='#b6beca'><b>{}</b></span>",
+				"weekdays": "<span color='#75aaf0'><b>{}</b></span>",
+				"today": "<span color='#e05f65'><b>{}</b></span>"
+			}
+		}
+	}
+}
