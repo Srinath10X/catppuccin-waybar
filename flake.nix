@@ -1,15 +1,21 @@
 {
-  description = "A very basic flake";
+  description = "Waybar with Catppuccin theme :)";
 
-  inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
-  };
+  inputs.nixpkgs.url = "github:nixos/nixpkgs";
 
-  outputs = { self, nixpkgs }: {
+  outputs = { self, nixpkgs }:
+    let
+      pkgs = import nixpkgs { system = "x86_64-linux"; };
+    in
+    {
+      devShells.x86_64-linux.default = pkgs.mkShell {
+        buildInputs = [ pkgs.waybar ];
 
-    packages.x86_64-linux.hello = nixpkgs.legacyPackages.x86_64-linux.hello;
-
-    packages.x86_64-linux.default = self.packages.x86_64-linux.hello;
-
-  };
+        shellHook = ''
+          echo "Launching Waybar with custom configuration..."
+          waybar --config ./leftbar/config.jsonc --style ./leftbar/style.css &
+        '';
+      };
+    };
 }
+
