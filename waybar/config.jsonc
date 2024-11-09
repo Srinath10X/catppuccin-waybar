@@ -15,68 +15,68 @@
 // ||---------------------------------------------------------------|| //
 
 {
-  "layer": "top",
-  "position": "top",
-  "mod": "dock",
-  "exclusive": true,
-  "passthrough": false,
-  "gtk-layer-shell": true,
-  "height": 44,
-  "modules-left": ["custom/launch_wofi", "hyprland/workspaces"],
-  "modules-right": [
-    "pulseaudio",
-    "backlight",
-    "network",
-    "custom/power_profile",
-    "battery",
-    "clock"
-  ],
-  "hyprland/window": {
-    "format": "{}"
-  },
+	"layer": "top",
+	"position": "top",
+	"mod": "dock",
+	"exclusive": true,
+	"passthrough": false,
+	"gtk-layer-shell": true,
+	"height": 44,
+	"modules-left": ["custom/launch_wofi", "hyprland/workspaces"],
+	"modules-right": [
+		"pulseaudio",
+		"backlight",
+		"network",
+		"custom/power_profile",
+		"battery",
+		"clock"
+	],
+	"hyprland/window": {
+		"format": "{}"
+	},
 
-  "workspace": {
-    "format": " {}",
-    "disable-scroll": false
-  },
-  "hyprland/workspaces": {
-    "disable-scroll": true,
-    "all-outputs": true,
-    "format": "{icon}",
-    "on-click": "activate",
+	"workspace": {
+		"format": " {}",
+		"disable-scroll": false
+	},
+	"hyprland/workspaces": {
+		"disable-scroll": true,
+		"all-outputs": true,
+		"format": "{icon}",
+		"on-click": "activate",
 		"persistent-workspaces": {
 			"1": [],
 			"2": [],
 			"3": []
 		},
 		"format-icons": {
-      "active": "  ",
-      "persistent": "  ",
-      "default": "  "
-    }
-  },
+			"active": "  ",
+			"persistent": "  ",
+			"default": "  "
+		}
+	},
 
-  "custom/power_profile": {
-    "exec": "asusctl profile -p | sed s:'Active profile is'::",
-    "interval": 30,
-    "format": "󰈐{}",
-    "on-click": "asusctl profile -n; pkill -SIGRTMIN+8 waybar",
-    "signal": 8
-  },
+	"custom/power_profile": {
+		"exec": "asusctl profile -p | sed s:'Active profile is'::",
+		"interval": 30,
+		"format": "󰈐{}",
+		"on-click": "asusctl profile -n; pkill -SIGRTMIN+8 waybar",
+		"signal": 8
+	},
 
-  "tray": {
-    "icon-size": 18,
-    "spacing": 10
-  },
+	"tray": {
+		"icon-size": 18,
+		"spacing": 10
+	},
 
-  "clock": {
-    "format": " {:%I:%M %p}",
-    "tooltip-format": "<tt>{calendar}</tt>",
-    "calendar": {
-    "mode": "month",
-    "mode-mon-col": 3,
-    "on-scroll": 1,
-    "on-click-right": "mode",
+	"clock": {
+		"format": " {:%I:%M %p}",
+		"tooltip-format": "<tt>{calendar}</tt>",
+		"calendar": {
+			"mode": "month",
+			"mode-mon-col": 3,
+			"on-scroll": 1,
+			"on-click-right": "mode",
 			"format": {
 				"months": "<span color='#BAC2DE'><b>{}</b></span>",
 				"weekdays": "<span color='#89B4FA'><b>{}</b></span>",
