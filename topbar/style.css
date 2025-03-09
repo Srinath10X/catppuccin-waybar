@@ -10,7 +10,7 @@ window#waybar {
   color: #cdd6f4;
   background: #1a1e23;
   border-radius: 0.5rem;
-  border: 2px solid rgba(117, 170, 240, 0.5);
+  /* border: 2px solid rgba(117, 170, 240, 0.5); */
 }
 
 /* workspaces module styles */
