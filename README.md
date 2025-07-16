@@ -17,7 +17,7 @@ Catppuccino-Waybar 🐱 is a streamlined Linux status bar 🖥️, perfect for t
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/catppuccin-waybar.git
+   git clone https://github.com/Srinath10X/catppuccin-waybar.git
    ```
 
 2. Navigate to the project directory:
