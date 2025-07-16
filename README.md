@@ -4,9 +4,9 @@ Simple, Minimal and Elegant Waybar config for Catppuccin theme.
 
 ## Preview
 #### OLDBAR
-![waybar](./assets/screenshot/bar1.png)
+![waybar](./assets/bar1.png)
 #### NEWBAR
-![waybar2](./assets/screenshot/bar2.png)
+![waybar2](./assets/bar2.png)
 
 ## Features
 
