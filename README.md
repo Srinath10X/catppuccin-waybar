@@ -1,10 +1,12 @@
 # catppuccin-waybar
 
-Catppuccino-Waybar 🐱 is a streamlined Linux status bar 🖥️, perfect for the Catppuccino theme. Personalize it to display key system info and notifications for a cohesive desktop experience.
+Simple, Minimal and Elegant Waybar config for Catppuccin theme.
 
 ## Preview
-
+#### OLDBAR
 ![waybar](./screenshot/waybar.png)
+#### NEWBAR
+![waybar2](./screenshot/waybar2.png)
 
 ## Features
 
