@@ -32,7 +32,7 @@
   	/* ----- Layout ----- */
     "modules-left":   ["group/workspaces", "hyprland/window", "tray"],
     "modules-center": ["custom/swaync", "group/clock"],
-    "modules-right":  ["idle_inhibitor", "backlight", "group/volume", "bluetooth", "network", "battery"],
+    "modules-right":  ["idle_inhibitor", "backlight", "group/volume", "bluetooth", "network", "battery"]
 
   },
   {
@@ -68,7 +68,7 @@
   	/* ----- Layout ----- */
     "modules-left":   ["group/workspaces", "hyprland/window", "tray"],
     "modules-center": ["custom/swaync", "group/clock"],
-    "modules-right":  ["idle_inhibitor", "group/volume", "bluetooth", "network", "battery"],
+    "modules-right":  ["idle_inhibitor", "group/volume", "bluetooth", "network", "battery"]
 
   }
 ]
