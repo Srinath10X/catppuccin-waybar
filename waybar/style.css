@@ -1,11 +1,11 @@
 /* Catppuccin Macchiato Colors */
 @import "catppuccin-macchiato.css";
 
-/* --- Mostly for fonts nothing special --- */
+/* --- Default Font --- */
 * {
     font-size: 16px;
     font-weight: bold;
-    font-family: "JetBrainsMono Nerd Font";
+    font-family: "0xProto Nerd Font";
 }
 
 /* ----- Waybar ----- */
