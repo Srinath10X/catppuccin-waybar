@@ -122,11 +122,17 @@
 	    "interval": 1,
 		"timezones": [
 		    "",   // Represents system's TZ
-			"UTC"
+			"America/Los_Angeles",
+			"UTC",
+			"Europe/Dublin"
 		],
-		"format": " {0:%H:%M:%S-%Z}",
-		"tooltip-format": "{tz_list}",
-		"timezone-tooltip-format": "{0:%Z %H:%M %z}"
+		"actions": {
+		    "on-click": "tz_up",
+			"on-click-right": "tz_down"
+		},
+		"format": " {0:%T-%Z}",
+		"tooltip-format": " 󰴞    󱉊     󱡡  \n{tz_list}",
+		"timezone-tooltip-format": "<b>{0:%Z}</b> {0:%H:%M} {0:%z}"
 	},
 
 	/* ----- Right Modules ----- */
