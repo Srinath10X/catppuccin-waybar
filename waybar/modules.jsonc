@@ -95,17 +95,25 @@
 	},
 	/* - Date - */
 	"clock#date": {
-	    "format": "󰃭 {0:%Y-%m-%d}",
-		"tooltip-format": "<tt>{calendar}</tt>",
+        "actions": {
+            "on-click":             "mode",
+    		"on-click-right":       "shift_reset",
+    		"on-click-forward":     "shift_up",
+    		"on-click-backward":    "shift_down",
+    		"on-scroll-down":       "shift_up",
+    		"on-scroll-up":         "shift_down"
+        },
+	    "format": "󰃭 {:%F}",
+		"tooltip-format": "󰃵 {0:%a, %b} {ordinal_date} {0:%Y}\n󰨳 {0:%U}\t󰃶 {0:%j}\n{calendar}",
 		"calendar": {
-			"mode": "month",
-			"mode-mon-col": 3,
-			"on-scroll": 1,
-			"on-click-right": "mode",
+		    "mode": "month",
+			"mode-mon-col": 4,
+			"weeks-pos": "left",
 			"format": {
-  			    "months":   "<span color='#b8c0e0'><b>{}</b></span>", // Macchiato Subtext 1
-  			    "weekdays": "<span color='#8aadf4'><b>{}</b></span>", // Macchiato Blue
-  			    "today":    "<span color='#ed8796'><b>{}</b></span>"  // Macchiato Red
+  			    "months":   "<span class='months'><b>{}</b></span>",
+                "weeks":    "<span class='weeks'>{}</span>",
+  			    "weekdays": "<span class='weekdays'><b>{}</b></span>",
+  			    "today":    "<span class='today'><b><u>{}</u></b></span>"
 			}
 		}
 	},

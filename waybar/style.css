@@ -85,6 +85,23 @@ tooltip label {
     margin: 0 10px;
 }
 
+/* - Date - */
+#clock.date.calendar-days {
+    color: @text;
+}
+#clock.date.calendar-months {
+    color: @green;
+}
+#clock.date.calendar-today {
+    color: @red;
+}
+#clock.date.calendar-weekdays {
+    color: @blue;
+}
+#clock.date.calendar-weeks {
+    color: @yellow;
+}
+
 /* --- Right Modules --- */
 .modules-right {
     margin-right: 20px;
