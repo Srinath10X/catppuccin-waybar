@@ -10,7 +10,7 @@ Coming soon
 ## Features
 - Easy install with `make`
   - Backs up your existing Waybar config
-- **Catppuccin Macchiato** theme
+- **Catppuccin** themes
 
 ## Installation
 
@@ -26,19 +26,21 @@ Coming soon
   cd catppuccin-waybar
   ```
 
-3. Add [`waybar/`](waybar) to your config directory:
+3. Build your desired Catppuccin flavor:
+  ```bash
+  make <flavor>
+  ```
+  where `<flavor>` is one of `frappe`, `latte`, `macchiato`, or `mocha`.
 
-  - **Using `make`:**
+4. Install the configuration to your `~/.config` directory:
+  ```bash
+  make install
+  ```
+  this will automatically back up any existing Waybar configuration to `~/.config/waybay.backup_<YYYYMMDD>_<HHMMSS>`.
 
-    (This will also back up your previous config to `~/.config/waybar.backup/`)
-  
-    ```bash
-    make install
-    ```
-
-  - **Manually:**
-
-    Replace your Waybar config directory (`~/.config/waybar/`) with `waybar/` and its contents.
+### Additional `make` targets
+- `backup`: Move your current Waybar config to a timestamped backup.
+- `clean`: Clear the built configuration to allow building a new one.
 
 ## Contributing
 
